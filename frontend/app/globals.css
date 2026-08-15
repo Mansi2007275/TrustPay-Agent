@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #fdf6e3;
+  background-image:
+    linear-gradient(#0a0a0a11 1px, transparent 1px),
+    linear-gradient(90deg, #0a0a0a11 1px, transparent 1px);
+  background-size: 28px 28px;
+  color: #0a0a0a;
+}
+
+::selection { background: #ffde59; }
+
+.nb-panel {
+  background: #ffffff;
+  border: 3px solid #0a0a0a;
+  box-shadow: 6px 6px 0px #0a0a0a;
+}
+
+.nb-btn {
+  border: 3px solid #0a0a0a;
+  box-shadow: 4px 4px 0px #0a0a0a;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  cursor: pointer;
+}
+.nb-btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0px #0a0a0a; }
+.nb-btn:active { transform: translate(1px, 1px); box-shadow: 2px 2px 0px #0a0a0a; }
+
+/* Custom scrollbar to keep the neobrutal feel */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #fdf6e3; }
+::-webkit-scrollbar-thumb { background: #0a0a0a; border: 2px solid #fdf6e3; }
